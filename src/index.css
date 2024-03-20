@@ -1,0 +1,64 @@
+/* Define your color palette */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --background-color: #f5f5f5;
+  --text-color: #333;
+  --border-color: #ccc;
+ }
+ 
+ /* Basic reset and global styles */
+ body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
+ }
+ 
+ /* Links */
+ a {
+  color: var(--primary-color);
+  text-decoration: none;
+ }
+ 
+ a:hover {
+  text-decoration: underline;
+ }
+ 
+ /* Headings */
+ h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 10px 0;
+ }
+ 
+ /* Buttons */
+ button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+ }
+ 
+ button:hover {
+  background-color: #0056b3;
+ }
+ 
+ /* Forms */
+ input, select, textarea {
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+ }
+ 
+ /* Responsive design */
+ @media (max-width: 768px) {
+  body {
+     font-size: 16px;
+  }
+ }
+ 

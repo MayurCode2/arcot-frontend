@@ -1,0 +1,42 @@
+.chartWrapper {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+   }
+   
+   .chartWrapper:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 6px 6px rgba(0, 0, 0, 0.08);
+    transform: scale(1.02);
+   }
+   
+   .chartTitle {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    transition: text-shadow 0.3s ease;
+   }
+   
+   .chartTitle:hover {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+   }
+   
+   .chart {
+    width: 100%;
+    height: 400px;
+   }
+   
+   /* Responsive styles */
+   @media (max-width: 768px) {
+    .chartWrapper {
+       max-width: 100%;
+    }
+   }
+   
