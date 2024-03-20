@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { setFilter } from '../app/features/aiInsights/aiInsightsSlice'; // Import the action to set the filter
 import CategoryDistributionChart from './CategoryDistributionChart';
 import ResponseTimesChart from './ResponseTimesChart';
 import { AppState } from '../app/store'; // Import the AppState type
 import styles from './Dashboard.module.css'; // Import the CSS module
+import UserSatisfactionChart from './UserSatisfactionChart';
 
 // Define specific types for your data
 interface CategoryDistributionData {
@@ -46,6 +46,10 @@ const Dashboard: React.FC = () => {
       <h2 className={styles.chartTitle}>Response Times Over Time</h2>
       <div className={styles.chartContainer}>
         <ResponseTimesChart data={responseTimesData} />
+      </div>
+      <h2 className={styles.chartTitle}>User Satisfaction</h2>
+      <div className={styles.chartContainer}>
+        <UserSatisfactionChart />
       </div>
       
     </div>

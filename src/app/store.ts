@@ -6,6 +6,7 @@ import aiInsightsReducer from './features/aiInsights/aiInsightsSlice';
 interface RootState {
  aiInsights: {
     data: any; // Replace 'any' with a more specific type based on your data structure
+    filter: string;
  };
 }
 
